@@ -38,8 +38,8 @@ function modalOpen(e) {
     <img src="${e.target.dataset.source}" width="1280" height="720">
 `,
     {
-      onShow: () => window.addEventListener("keydawn", modalClose),
-      onClose: () => window.removeEventListener("keydawn", modalClose),
+      onShow: () => window.addEventListener("keydown", modalClose),
+      onClose: () => window.removeEventListener("keydown", modalClose),
     }
   );
   instance.show();
